@@ -1,0 +1,12 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+    Scanner s = new Scanner(System.in);
+    int horas = s.nextInt();
+    int vel = s.nextInt();
+    double km = horas * vel;
+    double media = km / 12;
+    System.out.println(String.format("%.3f", media));
+    }
+}
