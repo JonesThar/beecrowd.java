@@ -1,0 +1,13 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+    Scanner s = new Scanner(System.in);
+    int valor = s.nextInt();
+    int ano = valor/ 365;
+    int meses = valor%365;
+    int dias = meses%30;
+    meses = meses/30;
+    System.out.println(ano + " ano(s)\n" + meses + " mes(es)\n" + dias + " dia(s)");
+    }
+}
