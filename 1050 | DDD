@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Scanner s = new Scanner(System.in);
+        int valor = s.nextInt();
+        
+        if(valor == 61){
+            System.out.println("Brasilia");
+        } else if(valor == 71) {
+            System.out.println("Salvador");
+        } else if(valor == 11) {
+            System.out.println("Sao Paulo");
+        } else if(valor == 21) {
+            System.out.println("Rio de Janeiro");
+        } else if(valor == 32) {
+            System.out.println("Juiz de Fora");
+        } else if(valor == 19) {
+            System.out.println("Campinas");
+        } else if(valor == 27) {
+            System.out.println("Vitoria");
+        } else if(valor == 31) {
+            System.out.println("Belo Horizonte");
+        } else {
+            System.out.println("DDD nao cadastrado");
+        }
+    }
+}
