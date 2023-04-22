@@ -1,0 +1,14 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+    Scanner s = new Scanner(System.in);
+    int sec = s.nextInt();
+    int horas = sec / 3600;
+    sec -= horas * 3600;
+    int minutos = sec / 60;
+    sec -= minutos * 60;
+    int segundos = sec;
+    System.out.println(horas + ":" + minutos + ":" + segundos);
+    }
+}
