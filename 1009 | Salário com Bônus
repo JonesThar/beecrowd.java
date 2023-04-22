@@ -1,0 +1,12 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+    Scanner s = new Scanner(System.in);
+    String nome = s.next();
+    double sal = s.nextDouble();
+    double vendas = s.nextDouble();
+    double total = ((vendas * 15) / 100) + sal;
+    System.out.println(String.format("TOTAL = R$ %.2f" , total));
+    }
+}
