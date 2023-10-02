@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) throws IOException {
+    Scanner s = new Scanner(System.in);
+  	    int hi = s.nextInt();
+        int mi = s.nextInt();
+        int hf = s.nextInt();
+        int mf = s.nextInt();
+        int min = (hi*60) + mi;
+        int min2 = (hf*60) + mf;
+        int hora = (24*60);
+        int total = 0;
+        if(min2 > min) {
+            total = min2 - min;
+            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",(total/60), (total%60));
+        } else if(min > min2) {
+            total = (hora - min) + (min2);
+            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",(total/60), (total%60));
+        } else if(min2 == min) {
+            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", 24, 0);
+    }
+  }
+}
