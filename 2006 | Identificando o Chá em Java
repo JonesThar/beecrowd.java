@@ -1,0 +1,22 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+      Scanner s = new Scanner(System.in);
+  		int T = s.nextInt();
+  		int A = s.nextInt();
+  		int B = s.nextInt();
+  		int C = s.nextInt();
+  		int D = s.nextInt();
+  		int E = s.nextInt();
+  		int res = 0;
+  
+  		if (T == A) res++;
+  		if (T == B) res++;
+  		if (T == C) res++;
+  		if (T == D) res++;
+  		if (T == E) res++;
+  
+  		System.out.println(res);
+	}
+ }
