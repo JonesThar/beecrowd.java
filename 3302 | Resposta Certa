@@ -1,0 +1,12 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Scanner s = new Scanner(System.in);
+		int res = 1;
+		int x = s.nextInt();
+		int[] vetor = new int[x];
+		for(var i = 0; i < vetor.length; i++) { vetor[i] = s.nextInt(); }
+		for(var valor : vetor) { System.out.printf("resposta %d: %d\n", res, valor); res++; }
+	}
+}
